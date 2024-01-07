@@ -71,11 +71,13 @@ const backgroundMusic = document.getElementById('backgroundMusic');
 
 muteButton.addEventListener('click', function() {
     if (backgroundMusic.muted) {
-       backgroundMusic.muted = false;
+        backgroundMusic.muted = false;
+        backgroundMusic.play();
         muteButton.classList.add('muted');
     } else {
         backgroundMusic.muted = true;
         muteButton.classList.remove('muted');
+        backgroundMusic.pause();
     }
 });
 
