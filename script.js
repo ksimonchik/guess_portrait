@@ -66,6 +66,18 @@ function resetGame() {
 }
 
 
+const muteButton = document.getElementById('muteButton');
+const backgroundMusic = document.getElementById('backgroundMusic');
+
+muteButton.addEventListener('click', function() {
+    if (backgroundMusic.muted) {
+       backgroundMusic.muted = false;
+        muteButton.classList.add('muted');
+    } else {
+        backgroundMusic.muted = true;
+        muteButton.classList.remove('muted');
+    }
+});
 
 
 
