@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess Portrait - Deepfake or Not?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo-container">
+    <a href="https://www.idrnd.ai/" target="_blank">
+        <img src="Logo-IDRND.webp" alt="ID R&D Logo" class="logo">
+    </a>
+	</div>
+    <div class="game-container">
+        <h1>Guess Portrait - Deepfake or Not?</h1>
+        <div class="image-container">
+            <img id="santaImage" src="port_5.jpg" alt="Santa Image">
+        </div>
+        <div class="buttons">
+            <button onclick="guess('real')">Real</button>
+            <button onclick="guess('deepfake')">Deepfake</button>
+        </div>
+        <p id="score">Attempt: 1/10</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
