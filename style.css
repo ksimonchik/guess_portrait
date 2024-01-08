@@ -18,8 +18,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    max-width: 600px;
+    width: 60%;
+    /*max-width: 600px;*/
     margin: auto;
     padding: 20px; /* Add some padding */
     overflow-y: auto; /* Allow scrolling if content is too large */
@@ -102,22 +102,27 @@ img {
 }
 
 /* Adjustments for smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .logo {
-        max-width: 100px;
+        max-width: 100%;
     }
 
+    .game-container{
+        width: 90%;
+    }
     img {
-        max-height: 50vh;
+        max-height: 100%;
+        max-width: 100%;
     }
 
     .buttons button {
-        font-size: 16px;
+        font-size: 32px;
         padding: 8px 16px;
-        width: 150px;
+        width: 40%;
+        height: 80px;
     }
 
     #score {
-        font-size: 18px;
+        font-size: 32px;
     }
 }
